@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+
+    <style type="text/css" media="screen">
+
+        @import "static.css/diseño1.css";
+    </style>
+
+</head>
+
+<body>
+
+<center><div class="container">
+    <center> <div class="content">
+        <center>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </center>
+        <center> <div id="apDiv1">
+            <div id="apDiv3">
+                <div align="center">
+                    <h1>Citas Medicas</h1>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p><img src="../static.css/reconocimientos-medicos-pamplona-renovar-carnet.600.png" width="233" height="241" /></p>
+                    <p>&nbsp;</p>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+            <div id="apDiv2">
+                <form id="form1" name="form1" action="/add" method="post">
+                    <p>&nbsp;</p>
+                    <p align="left">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="nuevo" id="Nombre" />
+                    </p>
+                    <p align="left">
+                        <label for="Asunto">Asunto</label>
+                        <input type="text" name="nuevo" id="Asunto" />
+                    </p>
+                    <p align="left">
+
+                        <label for="Fecha">Fecha</label>
+                        <input type="date" name="nuevo" id="Fecha" />
+
+
+                    </p>
+                    <p align="left">
+                        <label for="Hora">Hora</label>
+                        <input type="time" name="nuevo" id="Hora" />
+                    </p>
+                    <p align="left">
+                        <label for="Doctor">Doctor</label>
+                        <select name="nuevo" size="1" id="Doctor">
+                            <option>Jose Lopez</option>
+                            <option>Manuel Gomez</option>
+                            <option>Yadira Murillo</option>
+                            <option>Josefina Ayala</option>
+                        </select>
+                    </p>
+                    <p align="left">&nbsp;</p>
+                    <p align="left">
+                        <input type="submit" name="Registrar cita" id="Registrar cita"   value="Nuevo"/>
+                    </p>
+                    <p align="left">&nbsp;</p>
+                    <p align="left">&nbsp;</p>
+                    <p align="left">&nbsp;</p>
+                    <p align="left">&nbsp;</p>
+                    <p align="left">&nbsp;</p>
+                    <p>&nbsp;</p>
+                </form>
+            </div>
+        </div>
+            <div id="apDiv4">
+                <div id="apDiv5"></div>
+                <div id="apDiv6">
+                    <form id="form2" name="form2" method="post" action="">
+                        <input type="submit" name="button" id="button" value="Calendario" />
+                    </form>
+                </div>
+            </div>
+        </center>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>
+            <!-- end .content -->
+        </p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <h1>Lista de pacientes</h1>
+        <p>&nbsp;</p>
+        <div id="apDiv8">
+
+            <ol>
+
+                <li
+
+                        th:each="fila: ${lista}"
+                        th:text="${fila}">
+                </li>
+            </ol>
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=uabc.edu.mx_7sg44ok94ecp620ch4f5u6dss8%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=America%2FTijuana" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div>
+    </center>
+    <!-- end .container --></div></center>
+</body>
+</html>
+
